@@ -1,20 +1,23 @@
 # Smart CIFAR-10: Dynamic Weighted-Branch CNN
 
-A compact, reproducible PyTorch project for CIFAR-10 image classification using **parallel convolutional branches** combined by **learned, input-dependent weights**. Trains end-to-end on a single GPU (e.g., Colab T4) and reaches strong accuracy with a small footprint.
+A compact, reproducible PyTorch project for CIFAR-10 image classification using **parallel convolutional branches** combined by **input-dependent softmax weights** derived from per-channel means. Trains end-to-end on a single GPU (e.g., Colab T4) with standard data augmentation.
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C.svg)](#)
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB.svg)](#)
+[![Open in Colab](https://img.shields.io/badge/Colab-Open-yellow.svg)](https://colab.research.google.com/github/<your-username>/<your-repo>/blob/main/notebooks/cifar10.ipynb)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](#)
-[![Open in Colab](https://img.shields.io/badge/Colab-Open-yellow.svg)](#)
-
 
 ---
 
 ## Highlights
-- **Dynamic fusion:** multiple conv branches, **softmax weights** predicted from per-channel means of the input.
-- **Simple & fast:** runs in Colab; minimal dependencies.
-- **Reproducible:** fixed seeds, CLI config, saved metrics/plots.
-- **Clear results:** loss-by-iteration and accuracy-by-epoch plots; best test accuracy logged.
+- **Dynamic fusion:** Multiple conv branches; **softmax weights** predicted from the input’s channel statistics (per-channel means).
+- **Lightweight & fast:** Minimal code; runs smoothly on a single GPU (e.g., Colab T4).
+- **Reproducible:** Fixed seeds, logged metrics, one-command training.
+- **Clear results:** Loss-by-iteration and accuracy-by-epoch plots; best test accuracy reported.
+
+---
+
+## Project structure
 
 ---
 
