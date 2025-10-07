@@ -22,11 +22,7 @@ A compact, reproducible PyTorch project for CIFAR-10 image classification using 
 | Metric | Value |
 |---|---|
 | Best Test Accuracy | **88.2%** |
-| Epoch (best) | 26 |
-| Params | ~X.XX M |
-| Hardware | Colab T4 |
 
-> Replace with your exact numbers once you run. Plots saved in `reports/figs/`.
 
 ---
 
